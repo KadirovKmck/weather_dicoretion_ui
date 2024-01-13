@@ -44,7 +44,7 @@ class _HomePageState extends State<HomePage> {
           height: h * 1.0,
           decoration: const BoxDecoration(
             gradient: LinearGradient(
-                colors: [Color(0xff16C4EA), Color(0xff7DE8FF)],
+                colors: [Color(0xff5ED7F1), Color(0xff9CECFE)],
                 begin: FractionalOffset(0.0, 0.0),
                 end: FractionalOffset(0.5, 0.0),
                 stops: [0.0, 1.0],
@@ -161,14 +161,14 @@ class _HomePageState extends State<HomePage> {
                             ),
                             child: Column(
                               children: [
-                                Padding(
-                                  padding: const EdgeInsets.only(
-                                    right: 400,
-                                    top: 7,
-                                  ),
-                                  child: Row(
-                                    children: [
-                                      Container(
+                                Row(
+                                  children: [
+                                    Padding(
+                                      padding: const EdgeInsets.only(
+                                        left: 4,
+                                        top: 7,
+                                      ),
+                                      child: Container(
                                         height: 90,
                                         width: 90,
                                         decoration: const BoxDecoration(
@@ -178,8 +178,23 @@ class _HomePageState extends State<HomePage> {
                                               fit: BoxFit.cover),
                                         ),
                                       ),
-                                    ],
-                                  ),
+                                    ),
+                                    const Text(
+                                      'RainFal',
+                                      style: TextStyle(
+                                          fontWeight: FontWeight.w500,
+                                          fontSize: 25),
+                                    ),
+                                    SizedBox(
+                                      width: w * 0.4,
+                                    ),
+                                    const Text(
+                                      '3cm',
+                                      style: TextStyle(
+                                          fontWeight: FontWeight.w500,
+                                          fontSize: 20),
+                                    ),
+                                  ],
                                 ),
                               ],
                             ),
@@ -197,14 +212,14 @@ class _HomePageState extends State<HomePage> {
                             ),
                             child: Column(
                               children: [
-                                Padding(
-                                  padding: const EdgeInsets.only(
-                                    right: 400,
-                                    top: 7,
-                                  ),
-                                  child: Row(
-                                    children: [
-                                      Container(
+                                Row(
+                                  children: [
+                                    Padding(
+                                      padding: const EdgeInsets.only(
+                                        left: 4,
+                                        top: 7,
+                                      ),
+                                      child: Container(
                                         height: 90,
                                         width: 90,
                                         decoration: const BoxDecoration(
@@ -214,8 +229,23 @@ class _HomePageState extends State<HomePage> {
                                               fit: BoxFit.cover),
                                         ),
                                       ),
-                                    ],
-                                  ),
+                                    ),
+                                    const Text(
+                                      'Wind',
+                                      style: TextStyle(
+                                          fontWeight: FontWeight.w500,
+                                          fontSize: 25),
+                                    ),
+                                    SizedBox(
+                                      width: w * 0.4,
+                                    ),
+                                    const Text(
+                                      '19km/h',
+                                      style: TextStyle(
+                                          fontWeight: FontWeight.w500,
+                                          fontSize: 20),
+                                    ),
+                                  ],
                                 ),
                               ],
                             ),
@@ -233,14 +263,14 @@ class _HomePageState extends State<HomePage> {
                             ),
                             child: Column(
                               children: [
-                                Padding(
-                                  padding: const EdgeInsets.only(
-                                    right: 400,
-                                    top: 7,
-                                  ),
-                                  child: Row(
-                                    children: [
-                                      Container(
+                                Row(
+                                  children: [
+                                    Padding(
+                                      padding: const EdgeInsets.only(
+                                        left: 4,
+                                        top: 7,
+                                      ),
+                                      child: Container(
                                         height: 90,
                                         width: 90,
                                         decoration: const BoxDecoration(
@@ -250,8 +280,23 @@ class _HomePageState extends State<HomePage> {
                                               fit: BoxFit.cover),
                                         ),
                                       ),
-                                    ],
-                                  ),
+                                    ),
+                                    const Text(
+                                      'Humidity',
+                                      style: TextStyle(
+                                          fontWeight: FontWeight.w500,
+                                          fontSize: 25),
+                                    ),
+                                    SizedBox(
+                                      width: w * 0.4,
+                                    ),
+                                    const Text(
+                                      '64%',
+                                      style: TextStyle(
+                                          fontWeight: FontWeight.w500,
+                                          fontSize: 20),
+                                    ),
+                                  ],
                                 ),
                               ],
                             ),
@@ -261,6 +306,9 @@ class _HomePageState extends State<HomePage> {
                     ],
                   ),
                 ],
+              ),
+              SizedBox(
+                height: h * 0.00,
               ),
               Column(
                 children: [
@@ -274,7 +322,7 @@ class _HomePageState extends State<HomePage> {
                         const Text(
                           'Today',
                           style: TextStyle(
-                              fontWeight: FontWeight.w900, fontSize: 18),
+                              fontWeight: FontWeight.w500, fontSize: 20),
                         ),
                         const SizedBox(
                           width: 25,
@@ -282,14 +330,14 @@ class _HomePageState extends State<HomePage> {
                         ),
                         const Text(
                           'Tomorrow',
-                          style: TextStyle(fontSize: 18),
+                          style: TextStyle(fontSize: 20),
                         ),
-                        const SizedBox(
-                          width: 80,
+                        SizedBox(
+                          width: w * 0.2,
                         ),
                         const Text(
                           'Next 7 Days',
-                          style: TextStyle(fontSize: 18),
+                          style: TextStyle(fontSize: 20),
                         ),
                         const SizedBox(
                           width: 25,
@@ -316,10 +364,10 @@ class _HomePageState extends State<HomePage> {
                     ),
                   ),
                   const SizedBox(
-                    height: 15,
+                    height: 10,
                   ),
                   SizedBox(
-                    height: h * 0.1,
+                    height: 155,
                     child: Expanded(
                       child: ListView.builder(
                         itemCount: time.length,
@@ -331,8 +379,7 @@ class _HomePageState extends State<HomePage> {
                                 width: 15,
                               ),
                               Container(
-                                  height: 130,
-                                  width: 65,
+                                  width: 90,
                                   decoration: BoxDecoration(
                                     color: Colors.white
                                         .withOpacity(0.30000001192092896),
