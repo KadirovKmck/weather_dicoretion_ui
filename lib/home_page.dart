@@ -39,13 +39,12 @@ class _HomePageState extends State<HomePage> {
     double SliderValue = 0;
 
     return Scaffold(
-      appBar:AppBar() ,
       body: SingleChildScrollView(
         child: Container(
           height: h * 1.0,
           decoration: const BoxDecoration(
             gradient: LinearGradient(
-                colors: [Color(0xff5ED7F1), Color(0xff9CECFE)],
+                colors: [Color(0xff9CECFE), Color.0xff9CECFE],
                 begin: FractionalOffset(0.0, 0.0),
                 end: FractionalOffset(0.5, 0.0),
                 stops: [0.0, 1.0],
