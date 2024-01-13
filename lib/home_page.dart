@@ -39,6 +39,7 @@ class _HomePageState extends State<HomePage> {
     double SliderValue = 0;
 
     return Scaffold(
+      appBar:AppBar() ,
       body: SingleChildScrollView(
         child: Container(
           height: h * 1.0,
